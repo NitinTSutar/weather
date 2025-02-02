@@ -6,9 +6,21 @@
     <link href="./src/output.css" rel="stylesheet">
     <title>Document</title>
 </head>
-<body>
-    <h1 class="text-3xl font-bold underline">
-        Hello world!
-    </h1>
+<body class="font-(family-name:Arial, sans-serif) bg-[#121212] text-white flex justify-center
+items-center h-dvh">
+    <div class="bg-[#1E1E1E] p-[20px] rounded-2xl w-[400px] shadow-[0 5px 15px rgba[0,0,0,0.2]] text-center ">
+        <h1 class="mb-5 text-2xl">Weather app</h1>
+        <div class="flex content-between mb-5 ">
+            <input type="text" id="city-input" placeholder="Enter city name" class="w-[80%] p-2.5 bg-[#333333] border-0 rounded-[5px] text-white outline-0" />
+            <button id="get-weather-btn" class="w-[25%] p-2 text-[12px] bg-[#6200EA] border-0 cursor-pointer [transition:background-color_0.3s] hover:bg-[#3700B3]">Get Weather</button>
+        </div>
+        <div id="weather-info" class="hidden" >
+            <h2 id="city-name"></h2>
+            <p id="temperature"></p>
+            <p id="description"></p>
+        </div>
+        <p id="error-message" class="hidden c-[#FF5722] mt-5">City not found.   Please try again.</p>
+        </div>
+    <script src="src/script.js"></script>
 </body>
 </html>
